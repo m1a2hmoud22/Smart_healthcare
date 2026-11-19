@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fix n8n Chat Widget transparency and z-index */
+.n8n-chat-widget,
+#n8n-chat {
+  position: relative;
+  z-index: 99999 !important;
+}
+
+:root {
+  --chat--window--background: #ffffff !important;
+  --chat--message--bot--background: #f3f4f6 !important;
+  --chat--message--bot--color: #111827 !important;
+  --chat--input--background: #ffffff !important;
+  --chat--input--text-color: #111827 !important;
+}
